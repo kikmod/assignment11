@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Home</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg w-100">
+    <div class="container">
+      <a class="navbar-brand text-uppercase fs-4" href="#">Smart Login</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <a href="index.html" class="btn btn-outline-warning ms-auto">Logout</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container d-flex align-items-center justify-content-center min-vh-100">
+    <div class="welcome-box w-50">
+      <h1 class="welcome display-4 m-4 " >Welcome  <span id="username"></span></h1>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const username = localStorage.getItem("name") || "User";
+      document.getElementById("username").textContent = username;
+    });
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>

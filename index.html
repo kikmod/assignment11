@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Login</title>
+</head>
+<body>
+  <main class="d-flex justify-content-center min-vh-100">
+    <div class="container">
+      <div id="loginForm" class="form mx-auto d-flex flex-column my-5 align-items-center py-5">
+        <h1>Smart Login System</h1>
+        <div class="w-100">
+          <div class="mb-4">
+            <input id="loginEmail" type="text" class="form-control text-white" placeholder="Enter your email">
+          </div>
+          <div class="mb-4">
+            <input id="loginPassword" type="password" class="form-control text-white" placeholder="Enter your password">
+          </div>
+          <div id="loginMessage" class="validation-message"></div>
+          <button id="loginBtn" class="btn btn-outline-info w-100 my-3">Login</button>
+        </div>
+        <p class="text-white">Don’t have an account? <span id="signupLink">Sign up</span></p>
+      </div>
+      <div id="signupForm" class="form mx-auto d-none flex-column my-5 align-items-center py-5">
+        <h1 class="text-center">Smart Login System</h1>
+        <div class="w-100">
+          <div class="mb-4">
+            <input id="signupName" type="text" class="form-control text-white" placeholder="Enter your name">
+          </div>
+          <div class="mb-4">
+            <input id="signupEmail" type="text" class="form-control text-white" placeholder="Enter your email">
+          </div>
+          <div class="mb-4">
+            <input id="signupPassword" type="password" class="form-control text-white" placeholder="Enter your password">
+          </div>
+          <div id="signupMessage" class="validation-message"></div>
+          <button id="signupBtn" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+        </div>
+        <p class="text-center text-white">If you have an account? <span id="loginLink">sign in</span></p>
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>

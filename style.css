@@ -1,0 +1,92 @@
+body {
+  background-color: #24353f;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+}
+
+.welcome-box {
+  background-color: #24353f;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+
+}
+
+.welcome {
+  font-family: 'Titillium Web', sans-serif;
+  color:#17a2b8;
+}
+
+main {
+  background-color: #24353f;
+  font-family: "Titillium Web", sans-serif;
+}
+
+main h1 {
+  color: #17a2b8;
+}
+
+.form {
+  max-width: 900px;
+  width: 100%;
+  padding: 10rem;
+  background-color: #24353f;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+  display: block;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: white;
+}
+
+.form input[type="text"]::placeholder,
+.form input[type="password"]::placeholder {
+  color: white;
+}
+
+.form p span a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.form p span a:hover {
+  text-decoration: underline;
+}
+
+.validation-message {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.navbar {
+  background-color: #24353f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .navbar-brand {
+  font-family: 'Titillium Web', sans-serif;
+  color: #fff;
+}
+
+.navbar .btn-outline-info {
+  color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.navbar-toggler {
+  border-color: #17a2b8;
+}
